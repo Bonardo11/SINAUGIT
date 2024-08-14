@@ -1,93 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>LatihanWeb01</title>
-  <style>
-    body 
-    {
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatihanWeb01</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-    .container 
-    {
-      display: flex;
-      flex-direction: column;
-      width: 40%;
-    }
+        table {
+            width: 60%; /* Mengatur lebar tabel */
+            border-collapse: collapse; /* Menghapus jarak antar sel */
+            margin-bottom: 0%; /* Jarak bawah antar tabel */
+        }
 
-    .header
-    {
-      background-color: #ffe6cc;
-      padding: 20px;
-      text-align: center;
-    }
+        td {
+            padding: 20px;
+            text-align: center;
+            vertical-align: top; /* Memastikan konten berada di atas */
+            border: 1px solid #ccc; /* Menambahkan garis tepi pada tabel */
+        }
 
-    .navigation 
-    {
-      background-color: #e6f2ff;
-      padding: 10px;
-      text-align: center;
-    }
+        /* Warna bagian header */
+        .header {
+            background-color: #ffe6cc;
+        }
 
-    .content 
-    
-    {
-      display: flex;
-      width: 100%;
-      height: 300px;
-    }
+        /* Warna bagian navigasi */
+        .nav {
+            background-color: #e6f2ff;
+        }
 
-    .main 
-    {
-      background-color: #ffe6e6;
-      padding: 20px;
-      flex: 1;
-      width: 200px;
-    }
+        /* Warna bagian konten utama */
+        .main-content {
+            background-color: #ffe6e6;
+            text-align: left;
+        }
 
-    .sidebar 
-    {
-      background-color: #e0ffe6;
-      padding: 20px;
-      width: 200px;
-    }
+        /* Warna bagian sidebar */
+        .sidebar {
+            background-color: #e0ffe6;
+            text-align: left;
+        }
 
-    .footer 
-    {
-      background-color: #ffe6cc;
-      padding: 20px;
-      text-align: center;
-    }
-    
-  </style>
+        /* Warna bagian footer */
+        .footer {
+            background-color: #ffe6cc;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="header">
-      <h1>PEMROGRAMAN</h1>
-    </div>
-    <div class="navigation">
-      <p>POLITEKNIK ATMI SURAKARTA</p>
-    </div>
-    <div class="content">
-      <div class="main">
-        <h2>Rekayasa Perangkat Lunak</h2>
-        <p>salah satu bidang profesi dan juga mata pelajaran yang mempelajari tentang pengembangan perangkat-perangkat lunak termasuk dalam hal pembuatannya, pemeliharaan hingga manajemen organisasi dan manajemen kualitasnya.</p>
-      </div>
-      <div class="sidebar">
-        <h3>Menu:</h3>
-        <ul>
-          <li>Home</li>
-          <li>Berita</li>
-          <li>Layanan</li>
-          <li>Kontak</li>
-          <img src="Gambar/logo-removebg-preview.png" alt="logo atmi" width="120" height="130">
-        </ul>
-      </div>
-    </div>
-    <div class="footer">
-      <p>TEKNOLOGI REKAYASA MEKATRONIKA</p>
-    </div>
-  </div>
+    <!-- Tabel untuk Header -->
+    <header>
+        <table class="header">
+            <tr>
+                <td>
+                    <h1>PEMROGRAMAN</h1>
+                </td>
+            </tr>
+        </table>
+    </header>
+
+    <!-- Tabel untuk Navigasi -->
+    <nav>
+        <table class="nav">
+            <tr>
+                <td>
+                    <p>POLITEKNIK ATMI SURAKARTA</p>
+                </td>
+            </tr>
+        </table>
+    </nav>
+
+    <!-- Tabel untuk Konten Utama dan Sidebar -->
+    <section>
+        <table class="content">
+            <tr>
+                <td class="main-content" style="width: 75%;">
+                    <h1>Rekasaya Perangkat Lunak</h1>
+                    <p>Salah satu bidang profesi dan juga mata pelajaran yang mempelajari tentang pengembangan perangkat-perangkat lunak termasuk dalam hal pembuatannya, pemeliharaan hingga manajemen organisasi dan manajemen kualitasnya.</p>
+                </td>
+                <td class="sidebar" style="width: 25%;">
+                    <h2>Menu:</h2>
+                    <ul>
+                        <li>Home</li>
+                        <li>Berita</li>
+                        <li>Layanan</li>
+                        <li>Kontak</li>
+                        <br>
+                        <img src="Gambar/logo-removebg-preview.png" alt="logo atmi" width="120" height="130"> 
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Tabel untuk Footer -->
+    <footer>
+        <table class="footer">
+            <tr>
+                <td>
+                    <p>TEKNOLOGI REKAYASA MEKATRONIKA</p>
+                </td>
+            </tr>
+        </table>
+    </footer>
 </body>
 </html>
